@@ -20,8 +20,14 @@ quantitiy = 56;
 console.log(quantitiy);
 
 //regular functions
-function addOne(num: number) {
-  return num + 1;
-}
-const res = addOne(4);
-console.log(res);
+// function addOne(num: number) {
+//   return num + 1;
+// }
+// const res = addOne(4);
+// console.log(res);
+
+const minusOne = (num: number) => {
+  return num - 1;
+};
+const minusres = minusOne(10);
+console.log(minusres);
