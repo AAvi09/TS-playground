@@ -31,3 +31,10 @@ const minusOne = (num: number) => {
 };
 const minusres = minusOne(10);
 console.log(minusres);
+
+function greet(person: string = "anonymous") {
+  return `Hello ${person}`;
+}
+
+const greetings = greet("chilgozanand");
+console.log(greetings);
