@@ -55,3 +55,16 @@ const printUser: { name: string; age: number; location: string } = {
 
 console.log(printUser.name);
 console.log(printUser.age);
+
+type Jankaari = {
+  name: string;
+  age: number;
+  location: string;
+};
+
+const userJankaari = (jankaar: Jankaari) => {
+  return `Name : ${jankaar.name},Age : ${jankaar.age},Location : ${jankaar.location}`;
+};
+
+const aadhar = userJankaari({ name: "lukka", age: 75, location: "chichpokli" });
+console.log(aadhar);
