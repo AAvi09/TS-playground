@@ -38,3 +38,20 @@ function greet(person: string = "anonymous") {
 
 const greetings = greet("chilgozanand");
 console.log(greetings);
+
+// function infiniteLoop(): never {
+//   while (true) {}
+// }
+
+// let x: never;
+const names: string[] = ["alice", "bob", "candice", "jennie"];
+console.log(names);
+
+const printUser: { name: string; age: number; location: string } = {
+  name: "shakaaal",
+  age: 100,
+  location: "naagpada",
+};
+
+console.log(printUser.name);
+console.log(printUser.age);
