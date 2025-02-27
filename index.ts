@@ -93,3 +93,9 @@ const Avi: user = {
 console.log(
   `Name : ${Avi.first} ${Avi.last},Age : ${Avi.age},Email : ${Avi.emailId},Password : ${Avi.password}`
 );
+
+let color: "red" | "green" | "blue";
+color = "green";
+color = "red";
+// color = "cyan";
+console.log(color);
