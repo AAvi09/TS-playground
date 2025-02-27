@@ -68,3 +68,28 @@ const userJankaari = (jankaar: Jankaari) => {
 
 const aadhar = userJankaari({ name: "lukka", age: 75, location: "chichpokli" });
 console.log(aadhar);
+
+type userInfo = {
+  first: string;
+  last: string;
+  age: number;
+};
+
+type accountDetails = {
+  emailId: string;
+  password: string;
+};
+
+type user = userInfo & accountDetails;
+
+const Avi: user = {
+  first: "avi",
+  last: "sharma",
+  age: 82,
+  emailId: "avi@sharmagmail.com",
+  password: "avi@123",
+};
+
+console.log(
+  `Name : ${Avi.first} ${Avi.last},Age : ${Avi.age},Email : ${Avi.emailId},Password : ${Avi.password}`
+);
