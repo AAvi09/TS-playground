@@ -99,3 +99,5 @@ color = "green";
 color = "red";
 // color = "cyan";
 console.log(color);
+
+const games: [string, number, boolean] = ["cricket", 11, true];
