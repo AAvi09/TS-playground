@@ -101,3 +101,9 @@ color = "red";
 console.log(color);
 
 const games: [string, number, boolean] = ["cricket", 11, true];
+
+let isTrue: boolean | number = true;
+isTrue = 1;
+isTrue = false;
+// isTrue = "charishma";
+console.log(isTrue);
