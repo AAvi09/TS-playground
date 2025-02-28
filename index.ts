@@ -110,3 +110,9 @@ console.log(isTrue);
 
 const products = (number | string)[] = [1,"two",3,"four"];
 console.log(products); 
+
+enum weatherConditions {
+ sunny = "sunny",rainy = "rainy",cloudy = "cloudy",windy = "windy"
+}
+const sunnyWeather = weatherConditions.sunny ;
+console.log(sunnyWeather) 
