@@ -107,3 +107,6 @@ isTrue = 1;
 isTrue = false;
 // isTrue = "charishma";
 console.log(isTrue);
+
+const products = (number | string)[] = [1,"two",3,"four"];
+console.log(products); 
