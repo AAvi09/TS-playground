@@ -116,3 +116,16 @@ enum weatherConditions {
 }
 const sunnyWeather = weatherConditions.sunny ;
 console.log(sunnyWeather) 
+
+class Vyakti {
+  age : number;
+  name : string;
+  constructor(age:number,name:string){
+    this.age = age;
+    this.name = name;
+  }
+}
+
+const person1 = new Vyakti(24,"asraani");
+console.log(person1.age);
+
