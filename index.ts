@@ -129,3 +129,18 @@ class Vyakti {
 const person1 = new Vyakti(24,"asraani");
 console.log(person1.age);
 
+interface computer {
+  name : string;
+  ram : number;
+  memory : number;
+
+}
+
+const computeExample : computer = {
+  name : "dell",
+  ram : 8,
+  memory : 256
+}
+
+console.log(computerExample.name);
+
