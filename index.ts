@@ -142,5 +142,11 @@ const computeExample : computer = {
   memory : 256
 }
 
-console.log(computerExample.name);
+console.log(computeExample.name);
+
+interface MathOperation {
+  (x:number,y:number):number;
+}
+const add : MathOperation = (x:number,y:number) => x + y;
+
 
