@@ -108,45 +108,58 @@ isTrue = false;
 // isTrue = "charishma";
 console.log(isTrue);
 
-const products = (number | string)[] = [1,"two",3,"four"];
-console.log(products); 
+const products: (number | string)[] = [1, "two", 3, "four"];
+console.log(products);
 
 enum weatherConditions {
- sunny = "sunny",rainy = "rainy",cloudy = "cloudy",windy = "windy"
+  sunny = "sunny",
+  rainy = "rainy",
+  cloudy = "cloudy",
+  windy = "windy",
 }
-const sunnyWeather = weatherConditions.sunny ;
-console.log(sunnyWeather) 
+const sunnyWeather = weatherConditions.sunny;
+console.log(sunnyWeather);
 
 class Vyakti {
-  age : number;
-  name : string;
-  constructor(age:number,name:string){
+  age: number;
+  name: string;
+  constructor(age: number, name: string) {
     this.age = age;
     this.name = name;
   }
 }
 
-const person1 = new Vyakti(24,"asraani");
+const person1 = new Vyakti(24, "asraani");
 console.log(person1.age);
 
 interface computer {
-  name : string;
-  ram : number;
-  memory : number;
-
+  name: string;
+  ram: number;
+  memory: number;
 }
 
-const computeExample : computer = {
-  name : "dell",
-  ram : 8,
-  memory : 256
-}
+const computeExample: computer = {
+  name: "dell",
+  ram: 8,
+  memory: 256,
+};
 
 console.log(computeExample.name);
 
 interface MathOperation {
-  (x:number,y:number):number;
+  (x: number, y: number): number;
 }
-const add : MathOperation = (x:number,y:number) => x + y;
+const add: MathOperation = (x: number, y: number) => x + y;
 
+interface Car {
+  carName: string;
+  carModel: string;
+  carPrice: number;
+}
+const carExample: Car = {
+  carName: "hyundai",
+  carModel: "creta",
+  carPrice: 1500000,
+};
 
+console.log(carExample.carName);
