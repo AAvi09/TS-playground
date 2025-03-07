@@ -171,3 +171,13 @@ function printInfo<T>(x: T): T {
 const stringinfo = printInfo<string>("hello");
 const numberinfo = printInfo<number>(123);
 console.log(stringinfo);
+
+function printNumber(
+  item: number,
+  defaultItemNumber: number
+): [number, number] {
+  return [item, defaultItemNumber];
+}
+
+const num = printNumber(10, 20);
+console.log(num);
