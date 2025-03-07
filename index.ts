@@ -163,3 +163,11 @@ const carExample: Car = {
 };
 
 console.log(carExample.carName);
+
+function printInfo<T>(x: T): T {
+  return x;
+}
+
+const stringinfo = printInfo<string>("hello");
+const numberinfo = printInfo<number>(123);
+console.log(stringinfo);
