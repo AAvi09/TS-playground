@@ -181,3 +181,10 @@ function printNumber(
 
 const num = printNumber(10, 20);
 console.log(num);
+
+function uniquedataTypes<type>(item: type, defaultItem: type): [type, type] {
+  return [item, defaultItem];
+}
+
+const res = uniquedataTypes<number>(50, 60);
+console.log(res);
