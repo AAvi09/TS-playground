@@ -188,3 +188,5 @@ function uniquedataTypes<type>(item: type, defaultItem: type): [type, type] {
 
 const res = uniquedataTypes<number>(50, 60);
 console.log(res);
+const resString = uniquedataTypes<string>("hello", "world");
+console.log(resString);
