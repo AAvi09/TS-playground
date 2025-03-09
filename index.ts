@@ -190,3 +190,19 @@ const res = uniquedataTypes<number>(50, 60);
 console.log(res);
 const resString = uniquedataTypes<string>("hello", "world");
 console.log(resString);
+
+function getRandomValuekeyPair<T>(obj: { [key: string]: T }): {
+  key: string;
+  value: T;
+} {
+  const keys = Object.keys(obj);
+  const randomKey = keys[Math.floor(Math.random() * keys.length)];
+  return {
+    key: randomKey,
+    value: obj[randomKey],
+  };
+}
+
+const stringObj = { a: "apple", b: "banana", c: "cherry" };
+const randomString = getRandomValuekeyPair<string>(stringObj);
+console.log(randomString);
